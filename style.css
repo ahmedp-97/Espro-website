@@ -197,7 +197,7 @@ button {
   margin-top: 30px;
   margin-bottom: 10px;
   display: inline-block;
-  padding: 0px 43px;
+  padding: 0px 7px;
 }
 
 .par1, .par2, .par3, .par4{
@@ -403,7 +403,7 @@ button {
   left: 100px;;
   width: 178px;
   height: 50px;
-  border-radius: 4px
+  border-radius: 4px;
   font-family: 'DM Sans', sans-serif;
   font-weight: bold;
   font-size: 13px;  
@@ -512,12 +512,12 @@ button {
 
 .card_1, .card_2, .card_3 {
   text-align: center;
-  width: 26%;
-  height: 320px;
+  width: 30%;
+  height: 335px;
   background-color: white;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 30px;
+  padding-top: 2%;
 }
 
 .card_2{
@@ -624,7 +624,7 @@ button {
   text-align: left;
   font-family: 'Bodoni Moda', serif;
   font-size: 18px;
-  font-style: italic
+  font-style: italic;
   letter-spacing: 0px;
   color: #406C93;
 }
