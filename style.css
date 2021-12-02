@@ -181,20 +181,19 @@ button {
 }
  
 .second_section {
-  display: flex;
   height: 110px;
   width: 95%;
   margin: auto;
   align-items: center;
-  
   background-color: #F9F7F6;
 }
 
-.second_section_nav {
+.second_section_container {
   list-style: none;
   text-align: center;
 }
-.second_section_nav li {
+
+.second_section_container ul li {
   margin-top: 30px;
   margin-bottom: 10px;
   display: inline-block;
@@ -286,16 +285,17 @@ button {
   color: #376D94;
 } 
 
-.first_pic, .second_pic, .third_pic, .fourth_pic {
+.image_title {
   font-family: 'DM Sans', sans-serif;
   font-weight: bold;
   font-size: 17px;
   text-align: left;
   text-decoration: none;
   color: #122230;
+  line-height: 24px;
 }
 
-.first_pic_text, .third_pic_text, .fourth_pic_text {
+.first_pic_text, .third_pic_text, .fourth_pic_text{
   position: absolute;
   background: #FFDD99;
   border-radius: 2px;
@@ -328,7 +328,7 @@ button {
   height: 22px;
 }
 
-.pic_01, .pic_02, .pic_03, .pic_04 {
+.gray_span {
   font-size: 13px; 
   color: #646F78; 
   letter-spacing: 0.65px;
@@ -359,7 +359,7 @@ button {
   border-radius: 4px;
 }
 
-.third_pic span {
+.red_span {
   color: #ED4D4D;
   letter-spacing: 0.65px;
 }
@@ -399,7 +399,7 @@ button {
 
 .get_started {
   position: absolute;
-  margin-top: 14%;
+  margin-top: 12%;
   left: 100px;;
   width: 178px;
   height: 50px;
@@ -480,8 +480,12 @@ button {
   margin-top: 101px;
 }
 
+.zzz_img {
+  padding-top: 45px;
+  text-align: center;
+}
+
 .happy_sleepers_title{
-  padding-top: 103px;
   text-align: center;
   font-family: 'DM Sans', sans-serif;
   font-size: 30px;
@@ -508,7 +512,7 @@ button {
 
 .card_1, .card_2, .card_3 {
   text-align: center;
-  width: 515px;
+  width: 26%;
   height: 320px;
   background-color: white;
   padding-left: 50px;
@@ -538,10 +542,11 @@ button {
   font-size: 16px;
   letter-spacing: 0px;
   color: #122230;
+  line-height: 24px;
 }
 
 .card_author {
-  margin-top: 25px;
+  margin-top: 2%;
   text-align: center;
   font-family: 'Bodoni Moda', serif;
   font-weight: bold;
@@ -581,32 +586,153 @@ button {
   height: 786px;
 }
 
-.img_holiday {
-  position: absolute;
-  top: 3456px;
-  left: 101px;  
+.holiday_cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.holiday_card_1 {
   margin-top: 101px;
 }
 
-.img_back {
-  margin-top: 101px;
-  top: 3637px;
-  left: 81px;
-  margin-left: 81px;
+.holiday_card_2 {
+  margin-top: 95px;
+  margin-left: 76px;
 }
 
-.holiday_text {
-  position: absolute;
-  width: 700px;
-  height: 620px;
-  background-color: blue;
-  right: 7%;
-  top: 3557px;
+.merge_card_2_3 {
+  display: flex;
+  justify-content: center;
+  height: 209px;
+}
+
+.holiday_card_3 {
+  width: 119px;
+  height: 119px;
+  float: right;
+  margin-top: 7%;
+}
+
+.holiday_card_4{
+  display: flex;
+  justify-content: center;
+  height: 464%;
+}
+
+.hotel_bedding {
+  text-align: left;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 18px;
+  font-style: italic
+  letter-spacing: 0px;
+  color: #406C93;
+}
+
+.holiday_resorts {
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #1F3951;
+  font-size: 36px;
+  margin-top: 5px;
 }
 
 .rotate_logo {
   position: absolute;
+  animation: rotation 8s infinite linear;
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.holiday_card_img{
+  
+  margin-top: 40px;
+}
+
+.holiday_card_img ul, .picture6 {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  grid-gap: 10px;
+  margin-left: 40px;
+}
+
+.picture5 {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  grid-gap: 10px;
+}
+
+.picture5_text {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 59px;
+  height: 22px;
+  color: #BE2C2C;
+  background-color: #FFEBEB;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.55px;
+  padding-top: 5px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.picture6_text {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 108px;
+  height: 22px;
+  color: #406C93;
+  background-color: #DFEEF7;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.55px;
+  padding-top: 5px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.inn_bedding {
+  width: 280px;
+  height: 50px;
+  border: 2px solid #406C93;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  color: #406C93;
+  margin-top: 14%;
+  margin-left: 69%;
+}
+
+.inn_bedding:hover {
+  background: #406C93;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.inn_bedding_div {
+  width: 280px;
+  height: 50px;
+}
+
 
 .hotel_brands {
   width: 95%;
@@ -622,6 +748,7 @@ button {
   justify-content: center;
   margin-top: 45px;
   margin-right: 11%;
+
 }
 
 .other_hotels {
@@ -639,6 +766,7 @@ button {
   height: 100px;
   background-color: white;
   padding-top: 40px;
+  box-shadow: 5px 10px 8px 10px #0000000F;
 }
 
 .hotel_title {
@@ -664,8 +792,11 @@ button {
 }
 
 .see_all_hotels {
-  margin-top: 33px;
+  cursor: pointer;
+  padding-top: 20px;
   text-align: center;
+  margin: auto;
+  margin-top: 45px;
   font-family: 'DM Sans', sans-serif;
   font-weight: bold;
   font-size: 13px;
@@ -676,5 +807,201 @@ button {
   color: #1F3951;
 }
 
+.see_all_hotels:hover {
+  color: #1F3951;
+}
 
+.help_container {
+  width: 98%;
+  height: 380px;
+  margin: auto;
+  background-color: #F8F6F6;
+}
 
+.container_title {
+  padding-top: 55px;
+  margin-top: 85px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #1F3951;
+}
+
+.help_cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.help_card_1, .help_card_2, .help_card_3 {
+  text-align: center;
+  width: 33%;
+  height: 200px;
+}
+
+.help_card_title {
+  margin-top: 29px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #1F3951;
+}
+
+.help_card_content {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #1F3951;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 470px;
+  background-color: #EFF6FB;
+}
+
+.footer_cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer_card_title {
+  margin-top: 66px;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  color: #122230;
+}
+
+.footer_card_content {
+  text-align: left;
+  line-height: 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #122230;
+}
+
+.footer_card_content span {
+  font-size: 13px;
+  color: #646F78;
+}
+
+.footer_card_1 {
+  margin-right: 45px;
+  width: 297px;
+  height: 312px;
+}
+
+.footer_card_2 {
+  margin-right: 67px;
+  width: 161px;
+  height: 212px;
+}
+
+.footer_card_3 {
+  margin-right: 148px;
+  width: 154px;
+  height: 116px;
+}
+
+.footer_card_4 {
+  width: 406px;
+  height: 406px;
+}
+
+.footer_card4_title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #1F3951;
+  margin-top: 66px;
+}
+
+.footer_card4_content {
+  margin-top: 6px;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #122230;
+  line-height: 24px;
+}
+
+.container_box {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  width: 406px;
+  height: 50px; 
+}
+
+.email_box {
+  padding-left: 15px;
+  text-align: left;
+  width: 406px;
+  height: 50px;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0px;
+  color: #122230;
+}
+
+.sign_up {
+  width: 100px;
+  height: 50px;
+  background-color: #406C93;
+  border-radius: 0px 5px 5px 0px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  color: #FFFFFF;
+}
+
+.footer_card4_subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #1F3951;
+  margin-top: 45px;
+}
+
+.social_icons {
+  width: 62%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.facebook_icon, .instagram_icon, .pinterest_icon, .twitter_icon, .youtube_icon, .google_icon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+
+.rights_reserved {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #646F78;
+}
