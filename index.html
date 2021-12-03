@@ -4,17 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title></title>
+    <title>Pillow.com</title>
   </head>
   <body>
     <div class="top_message">
-      <a><img class="veteran_icon" src="./images/veteran icon.png" /></a>
-      <p class="veteran_title">Veteran Owned Business</p>
-      <p class="offer">
+    	<div class="header_cards">
+    		<img class="veteran_img" src="./images/veteran icon.png" / style="width: 26px; height: 26px;">
+    		<div class="offer_card1">
+     			<p class="veteran_title">Veteran Owned Business</p>
+    	</div>
+    	<div class="offer_card2">
+    		<p class="offer">
         <strong>BUY MORE SAVE MORE.</strong> Buy 2 of the same pillow Save 5%.
         Buy 4 of the same pillow Save 10%. <u>See Details.</u>
       </p>
-      <p class="contact_us">Contact Us</p>
+    	</div>
+      <div class="offer_card3">
+      	<p class="contact_us">Contact Us</p>
+      </div>
+    	</div>
     </div>
     <header>
       <a><img class="logo" src="./images/logo.png" alt="logo" /></a>
@@ -242,7 +250,7 @@
     </div>
     <div class="happy_sleepers">
       <div class="zzz_img">
-        <img src="./images/zzz icon.png" />
+        <img id="imgAnimate" src="./images/zzz icon.png" />
       </div>
       <p class="happy_sleepers_title">Happy Sleepers.</p>
       <p class="happy_sleepers_subtitle">
@@ -465,5 +473,26 @@
         &emsp;&emsp;Shopping
       </p>
     </footer>
+    <script>
+
+    	var isVisible = "visible";
+
+
+function blink() 
+{
+    
+    if(isVisible == "visible") isVisible = "hidden";
+    else                       isVisible = "visible";
+
+    
+    document.getElementById("imgAnimate").style.visibility=isVisible;
+
+    
+    setTimeout(blink, 1000);
+}
+
+blink();
+
+    </script>
   </body>
 </html>
